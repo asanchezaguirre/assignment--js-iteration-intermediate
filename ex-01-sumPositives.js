@@ -15,7 +15,9 @@ function sumPositives(numbers){
 	var suma = 0;
 //Recorre la función
     for (var i = 0; i < numbers.length; i++){  
+//Le pido que evalue si el nùmero es positivo, al compararlo con < a 0
       if (numbers[i] > 0){
+//Le pido que sume cada nùmero que encuentra en la iteraciòn de cada indice que cumple la condicion
       	suma = suma + numbers[i];
    	  }
     }

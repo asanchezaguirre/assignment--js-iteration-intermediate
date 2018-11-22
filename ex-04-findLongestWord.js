@@ -9,8 +9,14 @@
 // ++ YOUR CODE below
 
 
-
-
+function findLongestWord(word){
+	var larga = "";
+	palabras.split(" ");
+	
+	
+	
+	console.log(palabras);
+}
 
 
 
