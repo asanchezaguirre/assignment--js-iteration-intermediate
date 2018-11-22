@@ -12,8 +12,17 @@
  **/
 
  // ++ YOUR CODE below
-
-
+//Declarar la funciòn
+function sumDigits(number){
+//La variable va a almacenar la suma de los i 
+	var suma = 0;
+//Desplazarse a lo largo  del arreglo, itinerar
+	for (var i = 0; i < number.length; i++) {
+//Le sumarà cada i a la variable suma, conforme vaya desplazàndose
+		suma += number[i];
+	}
+	console.log(suma);
+}
 
 
 

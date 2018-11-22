@@ -10,8 +10,11 @@
 
 
 function findLongestWord(word){
-	var larga = "";
-	palabras.split(" ");
+	var dividir = word.split(" ");
+	var larga = 0;
+	for( var i = 0; i < str.length; i++) {
+
+	}
 	
 	
 	
