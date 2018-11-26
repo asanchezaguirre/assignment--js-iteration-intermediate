@@ -8,17 +8,26 @@
 
 // ++ YOUR CODE below
 
-
-function findLongestWord(word){
-	var dividir = word.split(" ");
-	var larga = 0;
-	for( var i = 0; i < str.length; i++) {
-
+//Se declara la función
+function findLongestWord(frase){
+	//Dividimos el string en un array
+	var palabras = frase.split(" ");
+	var length = 0;
+	var palabraLarga = "";
+	//Hacemos la iteraciòn sobre el array 
+	for(var i = 0; i < palabras.length; i++) {
+	//Si la logitud de alguna palabra de ese array es mayor a cero o a la longitud de la palabra previamente guardada
+     if (palabras[i].length > length){
+     	//entonces la variable length asumirà la longitud de esa palabra, para que en la iteraciòn se siga comparando
+     	length = palabras[i].length;
+     	//la variable serà igual a la palabra anteriormente identificada
+     	palabraLarga = palabras[i]
+     }
 	}
 	
+	console.log(palabraLarga);
 	
 	
-	console.log(palabras);
 }
 
 
