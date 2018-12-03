@@ -21,13 +21,12 @@ function findLongestWord(frase){
      	//entonces la variable length asumirà la longitud de esa palabra, para que en la iteraciòn se siga comparando
      	length = palabras[i].length;
      	//la variable serà igual a la palabra anteriormente identificada
-     	palabraLarga = palabras[i]
+     	palabraLarga = palabras[i];
      }
 	}
 	
 	console.log(palabraLarga);
-	
-	
+		
 }
 
 

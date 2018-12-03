@@ -15,13 +15,16 @@
 //Declarar la funciòn
 function sumDigits(number){
 //La variable va a almacenar la suma de los i 
+	var numString = number.toString();
 	var suma = 0;
+	
 //Desplazarse a lo largo  del arreglo, itinerar
-	for (var i = 0; i < number.length; i++) {
-//Le sumarà cada i a la variable suma, conforme vaya desplazàndose
-		suma += number[i];
-	}
-	console.log(suma);
+	for (var i = 0; i < numString.length; i++) {
+//Ocupar parseInt para analizar cada index de la cadena de texto y devolver un valor numerico
+		suma = suma + parseInt(numString[i]);
+	
+    }
+    return suma;
 }
 
 
