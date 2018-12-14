@@ -8,27 +8,30 @@
 
 // ++ YOUR CODE below
 
+//Declaramos otro funciòn que nos ayudarà con el split a eliminar la comilla de cada palabra que pase por ella
+//Despues de eliminar comilla volvemos a juntar con join y aplicamos length, pues lo emplearemos para comparar la longitud de la palabra que entrarà en esta función
+function palabraSinSimbolo(palabra){
+	return palabra.split("'").join("").length;
+}
+
+
 //Se declara la función
 function findLongestWord(frase){
 	//Dividimos el string en un array
 	var palabras = frase.split(" ");
-	var length = 0;
-	var palabraLarga = "";
+	var palabraLarga = palabras[1];
 	//Hacemos la iteraciòn sobre el array 
 	for(var i = 0; i < palabras.length; i++) {
-	//Si la logitud de alguna palabra de ese array es mayor a cero o a la longitud de la palabra previamente guardada
-     if (palabras[i].length > length){
-     	//entonces la variable length asumirà la longitud de esa palabra, para que en la iteraciòn se siga comparando
-     	length = palabras[i].length;
+	//Si la logitud de alguna palabra de ese array que ya pasò por la funciòn de arriba es mayor a cero o a la longitud de la palabra previamente guardada que tambien haya pasado por la funcion
+     if (palabraSinSimbolo(palabras[i]) > palabraSinSimbolo(palabraLarga)){
      	//la variable serà igual a la palabra anteriormente identificada
      	palabraLarga = palabras[i];
      }
 	}
 	
-	console.log(palabraLarga);
+	return palabraLarga;
 		
 }
-
 
 
 
